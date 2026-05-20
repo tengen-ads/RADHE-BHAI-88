@@ -1,126 +1,220 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>𝗣𝗥𝗢𝗙𝗜𝗧 𝗪𝗜𝗧𝗛 𝗛𝗔𝗖𝗞</title>
-<!-- Meta Pixel Code -->
+<div style="
+background:#f3f3f3;
+min-height:100vh;
+padding:30px 20px;
+text-align:center;
+font-family:Arial;
+">
+
+<!-- PROFILE IMAGE -->
+<img src="https://www.image2url.com/r2/default/images/1779289318904-a529511c-f21b-4cdd-a993-1c7950637b90.png"
+style="
+width:130px;
+height:130px;
+border-radius:50%;
+object-fit:cover;
+border:5px dotted #8d817c;
+display:block;
+margin:auto;
+">
+
+<!-- HEADING -->
+<h1 style="
+font-size:24px;
+font-weight:900;
+color:#000;
+margin-top:25px;
+line-height:1.5;
+font-family:Georgia;
+">
+𝑺𝑼𝑹𝑬𝑺𝑯𝑶𝑻 𝑩𝒀 𝑹𝑨𝑫𝑯𝑬 🔥<br>
+</h1>
+
+<!-- SUBTEXT -->
+<p style="
+font-size:16px;
+color:#000;
+margin-top:15px;
+margin-bottom:25px;
+">
+VIP PANEL MILEGA OK WIN KA JOIN KARO
+</p>
+
+<!-- TELEGRAM BUTTON -->
+<a href="https://t.me/+my4_VPJ4xMk2NTQ1"
+style="
+background:#1488ed;
+color:white;
+text-decoration:none;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:12px;
+padding:18px 20px;
+border-radius:40px;
+font-size:18px;
+font-weight:bold;
+box-shadow:0 5px 12px rgba(0,0,0,0.2);
+max-width:100%;
+">
+
+<span style="
+background:white;
+color:#1488ed;
+width:28px;
+height:28px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:15px;
+font-weight:bold;
+">
+✈️
+</span>
+
+JOIN TELEGRAM
+
+<span style="
+background:white;
+color:#1488ed;
+width:28px;
+height:28px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:15px;
+font-weight:bold;
+">
+✈️
+</span>
+
+</a>
+
+<!-- COUNTDOWN -->
+<div style="
+display:flex;
+justify-content:center;
+gap:18px;
+margin-top:30px;
+">
+
+<div>
+<div id="days"
+style="
+font-size:38px;
+font-weight:bold;
+color:#c7002f;
+">
+00
+</div>
+
+<div style="
+font-size:12px;
+font-weight:bold;
+color:#c7002f;
+letter-spacing:1px;
+">
+DAYS
+</div>
+</div>
+
+<div>
+<div id="hours"
+style="
+font-size:38px;
+font-weight:bold;
+color:#c7002f;
+">
+00
+</div>
+
+<div style="
+font-size:12px;
+font-weight:bold;
+color:#c7002f;
+letter-spacing:1px;
+">
+HOURS
+</div>
+</div>
+
+<div>
+<div id="minutes"
+style="
+font-size:38px;
+font-weight:bold;
+color:#c7002f;
+">
+00
+</div>
+
+<div style="
+font-size:12px;
+font-weight:bold;
+color:#c7002f;
+letter-spacing:1px;
+">
+MINUTES
+</div>
+</div>
+
+<div>
+<div id="seconds"
+style="
+font-size:38px;
+font-weight:bold;
+color:#c7002f;
+">
+59
+</div>
+
+<div style="
+font-size:12px;
+font-weight:bold;
+color:#c7002f;
+letter-spacing:1px;
+">
+SECONDS
+</div>
+</div>
+
+</div>
+
+</div>
+
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1490280595807749');
-fbq('track', 'PageView');
+
+let totalSeconds = 59;
+
+function updateCountdown(){
+
+let days = Math.floor(totalSeconds / 86400);
+let hours = Math.floor((totalSeconds % 86400) / 3600);
+let minutes = Math.floor((totalSeconds % 3600) / 60);
+let seconds = totalSeconds % 60;
+
+document.getElementById("days").innerHTML =
+String(days).padStart(2,'0');
+
+document.getElementById("hours").innerHTML =
+String(hours).padStart(2,'0');
+
+document.getElementById("minutes").innerHTML =
+String(minutes).padStart(2,'0');
+
+document.getElementById("seconds").innerHTML =
+String(seconds).padStart(2,'0');
+
+if(totalSeconds > 0){
+totalSeconds--;
+}
+
+}
+
+setInterval(updateCountdown,1000);
+
+updateCountdown();
+
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1490280595807749&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: radial-gradient(circle, #1a001f, #000);
-    color: #fff;
-    text-align: center;
-}
-
-.container {
-    max-width: 400px;
-    margin: 40px auto;
-    background: rgba(30, 0, 40, 0.85);
-    padding: 30px;
-    border-radius: 25px;
-    box-shadow: 0 0 35px rgba(255, 0, 150, 0.5);
-}
-
-.logo img {
-    width: 140px;
-    border-radius: 50%;
-    border: 4px solid #ff0099;
-    box-shadow: 0 0 25px #ff0099;
-}
-
-h1 {
-    margin-top: 20px;
-    font-size: 26px;
-    letter-spacing: 2px;
-}
-
-.sub {
-    color: #ff4dc4;
-    font-size: 14px;
-    margin: 10px 0 20px;
-    letter-spacing: 1px;
-}
-
-.btn {
-    display: inline-block;
-    background: linear-gradient(45deg, #ff0080, #ff4dc4);
-    color: #fff;
-    padding: 15px 30px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    box-shadow: 0 0 20px #ff0099;
-    margin-top: 15px;
-}
-
-.members {
-    margin-top: 20px;
-    font-size: 14px;
-}
-
-.footer {
-    margin-top: 30px;
-    font-size: 12px;
-    color: #aaa;
-}
-
-.footer span {
-    color: #ff4dc4;
-}
-</style>
-
-</head>
-
-<body>
-
-<div class="container">
-
-    <div class="logo">
-        <!-- IMAGE CHANGE HERE -->
-        <img src="https://d1yei2z3i6k35z.cloudfront.net/9021055/69db12f25332d1.87527816_6253518829212339758_120.jpg">
-    </div>
-
-    <h1>𝗣𝗥𝗢𝗙𝗜𝗧 𝗪𝗜𝗧𝗛 𝗛𝗔𝗖𝗞</h1>
-
-    <div class="sub">
-        100% NUMBER FIXER | PREDICTION KING
-    </div>
-
-    <!-- TELEGRAM BUTTON -->
-    <a class="btn" href="https://t.me/+Wx0B0rddmllmY2Nl" target="_blank">
-        JOIN TELEGRAM ⚡
-    </a>
-
-    <div class="members">
-        ★ 40,000+ MEMBERS ACROSS INDIA ★
-        <br><br>
-        KING OF COLOUR ANALYSIS
-    </div>
-
-</div>
-
-<div class="footer">
-    ADS BY <span>@tengenads</span>
-</div>
-
-</body>
-</html>
