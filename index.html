@@ -1,3 +1,36 @@
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
+n.queue=[];
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '967383446140379');
+fbq('track', 'PageView');
+
+function trackTelegram(){
+fbq('track', 'Lead');
+}
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=967383446140379&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
+
 <div style="
 background:#f3f3f3;
 min-height:100vh;
@@ -27,7 +60,7 @@ margin-top:25px;
 line-height:1.5;
 font-family:Georgia;
 ">
-𝑺𝑼𝑹𝑬𝑺𝑯𝑶𝑻 𝑩𝒀 𝑹𝑨𝑫𝑯𝑬 🔥<br>
+𝑺𝑼𝑹𝑬𝑺𝑯𝑶𝑻 𝑩𝒀 𝑹𝑨𝑫𝑯𝑬 🔥
 </h1>
 
 <!-- SUBTEXT -->
@@ -42,6 +75,11 @@ VIP PANEL MILEGA OK WIN KA JOIN KARO
 
 <!-- TELEGRAM BUTTON -->
 <a href="https://t.me/+my4_VPJ4xMk2NTQ1"
+
+onclick="trackTelegram()"
+
+target="_blank"
+
 style="
 background:#1488ed;
 color:white;
